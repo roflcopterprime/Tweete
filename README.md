@@ -1,0 +1,1 @@
+Hi this is my first project its hella bad plz excuse the noobieness

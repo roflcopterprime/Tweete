@@ -1,13 +1,22 @@
 {
-  "name"         : "tweete",
-  "version"      : "0.0.1",
-  "description"  : "NodeJS app for scrubs like me",
-  "main"         : "server.js",
-  "author"       : "Hao Nguyen",
-  "dependencies" : {
-    "express"         : "latest",
-    "body-parser"     : "latest",
-    "method-override" : "latest",
-    "twitter" : "latest"
-  }
+  "name": "tweete",
+  "version": "0.0.1",
+  "description": "NodeJS app for scrubs like me",
+  "main": "server.js",
+  "author": "Hao Nguyen",
+  "dependencies": {
+    "express": "latest",
+    "body-parser": "latest",
+    "method-override": "latest",
+    "twitter": "latest"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "license": "ISC"
 }
