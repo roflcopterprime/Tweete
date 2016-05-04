@@ -9,15 +9,13 @@ var client = new Twitter({
 
 module.exports = {
     getTimeline : function (req, res){
-
     client.get('statuses/user_timeline', {screen_name: req.body.data, count: 15}, function(error, tweets, response){
      if (!error) {
        console.log(tweets);
      }
 
      console.log(JSON.stringify(response));
-            res.json(tweets);
-     }
-}
-
-});
+      res.json(tweets);
+     });
+  }
+};
