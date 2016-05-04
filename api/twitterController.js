@@ -1,0 +1,23 @@
+var Twitter = require('twitter');
+
+var client = new Twitter({
+  consumer_key: 'HoaLEJX66CUZJb3skPd39wgL2',
+  consumer_secret: '38kaEN96UmaRG30mIn3EvLgx0NaK2viyv2eJ4l7MpAj8oqJgjI',
+  access_token_key: 'nZplw9SlfH3LZEYKcoBCUq6XEJexfRyh0HFUra3mSHhz2',
+  access_token_secret: '3262596740-JdwC4xCV7oXBvkPlxC4SSubpnSBI472Zfu4LZwb'
+});
+
+module.exports = {
+    getTimeline : function (req, res){
+
+    client.get('statuses/user_timeline', {screen_name: req.body.data, count: 15}, function(error, tweets, response){
+     if (!error) {
+       console.log(tweets);
+     }
+
+     console.log(JSON.stringify(response));
+            res.json(tweets);
+     }
+}
+
+});

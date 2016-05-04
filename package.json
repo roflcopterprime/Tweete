@@ -1,0 +1,13 @@
+{
+  "name"         : "Luke's Training",
+  "version"      : "0.0.1",
+  "description"  : "NodeJS app for scrubs like me",
+  "main"         : "server.js",
+  "author"       : "Hao Nguyen",
+  "dependencies" : {
+    "express"         : "latest",
+    "body-parser"     : "latest",
+    "method-override" : "latest",
+    "twitter" : "latest"
+  }
+}

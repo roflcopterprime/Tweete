@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Luke's Training</title>
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="main.js"></script> 
+</head>
+<body>
+	<div class = "container">
+		<div class = "row">
+			<h1> What's poppin??</h1>
+		</div>
+
+		<div class = "row">
+			<h2> Enter below homie</h2>
+			<form>
+					<input type="text" placeholder="@username" ng-model="username.data">
+				<button type="submit" ng-click="search()">Search...</button>
+			</form>
+		</div>
+
+		<div class = "row" ng-repeat = "tweet in tweets">
+		</div>
+
+
+	</div>
+
+
+
+
+</body>
+
+</html>
