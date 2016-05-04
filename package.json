@@ -1,5 +1,5 @@
 {
-  "name"         : "Luke's Training",
+  "name"         : "tweete",
   "version"      : "0.0.1",
   "description"  : "NodeJS app for scrubs like me",
   "main"         : "server.js",
