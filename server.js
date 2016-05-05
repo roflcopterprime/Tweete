@@ -1,17 +1,17 @@
 // set up ======================================================================
 var express = require('express');
-var app = express(); 						// create our app w/ express
+var app = express(); 			
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var routes = require('./api/routes');
 
-// Configuration ===============================================================
+// Configuration ====================================================
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public')); 		
-app.use(bodyParser.urlencoded({'extended': 'true'})); // parse application/x-www-form-urlencoded
-app.use(bodyParser.json()); // parse application/json
-app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-Method-Override header in the request
-app.use(function (req, res, next){ //configure for cross origin headers
+app.use(bodyParser.urlencoded({'extended': 'true'})); 
+app.use(bodyParser.json());
+app.use(methodOverride('X-HTTP-Method-Override')); 
+app.use(function (req, res, next){
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
     res.setHeader("Access-Control-Allow-Headers", "*");

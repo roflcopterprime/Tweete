@@ -9,7 +9,7 @@ angular.module('twitterBigApp', [])
 				return $http.post('/tweets/', username);
 			}
 		}
-	}])
+	}]);
 
 	.controller('controller', ['$scope','$http','Twitter', function($scope, $http, Twitter) {
 		$scope.username = "";
@@ -22,7 +22,7 @@ angular.module('twitterBigApp', [])
 
 		// get the tweets
 		$scope.search = function() {
-				TweetFactory.getTweets($scope.twitterHandle)
+				TweetFactory.getTweets($scope.username)
 					.success(function(data) {
 						$scope.tweets = JSON.parse(data);
 					});

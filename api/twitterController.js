@@ -9,12 +9,12 @@ var client = new Twitter({
 
 module.exports = {
     getTimeline : function (req, res){
-    client.get('statuses/user_timeline', {screen_name: req.body.data, count: 15}, function(error, tweets, response){
+    client.get('statuses/user_timeline', {screen_name: req.body.data, count: 15}, function(error, tweets, res){
      if (!error) {
        console.log(tweets);
      }
 
-     console.log(JSON.stringify(response));
+     console.log(JSON.stringify(tweets));
       res.json(tweets);
      });
   }
