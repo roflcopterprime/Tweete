@@ -1,6 +1,6 @@
 angular.module('twitterLittleApp', [])
 
-	.controller('controller', ['$scope','$http','Twitter', function($scope, $http, Twitter) {
+	.controller('controller', ['$scope','$http','TweetFactory', function($scope, $http, TweetFactory) {
 		$scope.username = "";
 
 		// get landing page
