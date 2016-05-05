@@ -1,1 +1,1 @@
-angular.module('twitterBigApp', ['twitterLittleApp', 'tService'])
+angular.module('twitterBigApp', ['twitterLittleApp', 'tService']);
