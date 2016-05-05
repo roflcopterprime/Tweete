@@ -44,8 +44,8 @@
 					<img ng-src='{{tweet.user.profile_image_url}}'></img>
 					<h3>{{tweet.user.name}}</h3>
 					
-					<p ng-bind-html="tweet.text | tweetMentions:'_blank'"></p>
-					<p ><i>{{tweet.created_at | moment :'fromNow'}}</i></p>
+					<p ng-bind-html="tweet.text"></p>
+					<p ><i>{{tweet.created_at}}</i></p>
 					<p > {{tweet.favorite_count}}  {{tweet.retweet_count}}</p>
 		</div>
 
