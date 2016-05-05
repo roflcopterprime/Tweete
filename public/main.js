@@ -1,15 +1,4 @@
-angular.module('twitterBigApp', [])
-
-	.factory('TweetFactory', ['$http',function($http) {
-		return {
-			get : function() {
-				return $http.get('/');
-			},
-			getTweets : function(username) {
-				return $http.post('/tweets/', username);
-			}
-		}
-	}])
+angular.module('twitterLittleApp', [])
 
 	.controller('controller', ['$scope','$http','Twitter', function($scope, $http, Twitter) {
 		$scope.username = "";
