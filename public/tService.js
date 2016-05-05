@@ -1,4 +1,4 @@
-angular.module('tits",[]')
+angular.module('tService', [])
 
 	.factory('TweetFactory', ['$http',function($http) {
 		return {
