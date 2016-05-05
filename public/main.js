@@ -11,7 +11,7 @@ angular.module('twitterLittleApp', [])
 
 		// get the tweets
 		$scope.search = function() {
-				TweetFactory.getTweets($scope.twitterHandle)
+				TweetFactory.getTweets($scope.username)
 					.success(function(data) {
 						$scope.tweets = JSON.parse(data);
 					});

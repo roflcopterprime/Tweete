@@ -35,10 +35,9 @@
 		</div>
 
 		<div class = "row" ng-repeat = "tweet in tweets">
-			<div class = "single-tweet">
-						<img ng-src='{{tweet.user.profile_image_url}}'></img>
-						<h3>{{tweet.user.name}}</h3>
-					</div>
+					<img ng-src='{{tweet.user.profile_image_url}}'></img>
+					<h3>{{tweet.user.name}}</h3>
+					
 					<p ng-bind-html="tweet.text | tweetMentions:'_blank'"></p>
 					<p ><i>{{tweet.created_at | moment :'fromNow'}}</i></p>
 					<p > {{tweet.favorite_count}}  {{tweet.retweet_count}}</p>
