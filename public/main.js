@@ -27,5 +27,4 @@ angular.module('twitterBigApp', [])
 						$scope.tweets = JSON.parse(data);
 					});
 			}
-		};
 	}]);
