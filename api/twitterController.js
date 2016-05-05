@@ -9,6 +9,7 @@ var client = new Twitter({
 
 module.exports = {
     getTimeline : function (req, res){
+      console.log("ASDFLKAJSLDKFJALKSJDFLKJASLDFJALSJDF");
     client.get('statuses/user_timeline', {screen_name: req.body.data, count: 15}, function(error, data, response){
      if (!error) {
        console.log(data);
