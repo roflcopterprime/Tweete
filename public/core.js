@@ -1,1 +1,1 @@
-angular.module('twitterBigApp', ['twitterLittleApp', 'tits'])
+angular.module('twitterBigApp', ['twitterLittleApp', 'tits','ngRoute'])
