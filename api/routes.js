@@ -11,7 +11,5 @@ router.get('/', function (req, res){
 });
 
 var twitterController = require('./twitterController');
-
 router.post('/tweets', twitterController.getTimeline);
-
 module.exports = router;

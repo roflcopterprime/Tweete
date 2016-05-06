@@ -41,12 +41,12 @@
 		</div>
 
 		<div class = "row" ng-repeat = "tweet in tweets">
-					<img ng-src='{{tweet.user.profile_image_url}}'></img>
-					<h3>{{tweet.user.name}}</h3>
+					<img ng-src='tweet.user.profile_image_url'></img>
+					<h3>tweet.user.name</h3>
 					
 					<p ng-bind-html="tweet.text"></p>
-					<p ><i>{{tweet.created_at}}</i></p>
-					<p > {{tweet.favorite_count}}  {{tweet.retweet_count}}</p>
+					<p>tweet.created_at</p>
+					<p> tweet.favorite_count  tweet.retweet_count</p>
 		</div>
 
 
