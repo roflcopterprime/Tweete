@@ -33,7 +33,7 @@
 		</div>
 
 		<div class = "row">
-			<h2> Enter below homie</h2>
+			<h2> Enter below to find out who's tweeting what</h2>
 			<form>
 					<input type="text" placeholder="@username" ng-model="username.data">
 				<button type="submit" ng-click="search()">Search</button>
@@ -46,7 +46,7 @@
 					
 					<p ng-bind="tweet.text"></p>
 					<p>{{tweet.created_at}}</p>
-					<p> {{tweet.favorite_count}}  {{tweet.retweet_count}}</p>
+					<p> {{tweet.favorite_count}} favorite and {{tweet.retweet_count}} retweets</p>
 		</div>
 
 
