@@ -14,7 +14,7 @@ angular.module('twitterLittleApp', [])
 			console.log("QWER12312341234");
 				TweetFactory.getTweets($scope.username)
 					.success(function(data) {
-						$scope.tweets = JSON.parse(data);
+						$scope.tweets = JSON.parse(JSON.stringify(data));
 					});
 			}
 	}]);
