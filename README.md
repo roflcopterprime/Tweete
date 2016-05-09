@@ -1,1 +1,1 @@
-Hi this is my first project its hella bad plz excuse the noobieness
+Hi this is my first project using NodeJs and angularJS, I hope it doesn't suck too bad lol
