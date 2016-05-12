@@ -3,7 +3,20 @@
 
 }
 
-.instruct{
-	text-align: center;
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
+.instruct{
+	text-align: center;
+	width: 60%;
+
+}
+
+body {
+  background-color: #E4F1FE;
+  opacity: 70%;
+  text-align: center;
+}

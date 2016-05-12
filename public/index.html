@@ -7,17 +7,8 @@
 
 	<title>Tweete</title>
 
-	<!-- STYLESHEETS -->
-	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
 
-	<!-- JS 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
--->
-
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./styles.css">
 
@@ -35,15 +26,28 @@
 			<h1> What's poppin?</h1>
 		</div>
 
+<div class="row vcenter">
+	<h2> Enter below to find out who's tweeting what</h2>
+
+      <div class="input-group instruct vcenter">
+      <input type="text" class="form-control" placeholder="Search for..." ng-model="username.data">
+      </div>
+
+      <span class="input-group-btn">
+       <button  type="submit" class="btn btn-secondary" ng-click="search()">Go!</button>
+      </span>
+  
+  </div>
+
 		<div class = "row instruct">
 			<h2> Enter below to find out who's tweeting what</h2>
-			<form>
-					<input type="text" placeholder="@username" ng-model="username.data">
-				<button type="submit" ng-click="search()">Search</button>
+			<form >
+					<input type="text" class="" placeholder="username" ng-model="username.data">
+				<button type="submit" class="btn" ng-click="search()">Search</button>
 			</form>
 		</div>
 
-		<div class = "row" ng-repeat = "tweet in tweets">
+		<div class = "row fade" ng-repeat = "tweet in tweets">
 			<center>
 					<img ng-src='{{tweet.user.profile_image_url}}'></img>
 					<h3>{{tweet.user.name}}</h3>
