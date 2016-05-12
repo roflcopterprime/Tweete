@@ -19,6 +19,11 @@
 	width: 50% !important;
 }
 
+.one_tweet{
+	width: 75% !important;
+	
+}
+
 body {
   background-color: #D6F3FF;
   opacity: 75%;
@@ -29,7 +34,7 @@ body {
 
 .instruct{
 	text-align: center;
-	width: 350px !important;
+	width: 375px !important;
 }
 
 }
