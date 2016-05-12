@@ -28,17 +28,16 @@
 
 <div class="row vcenter">
 	<h2> Enter below to find out who's tweeting what</h2>
-
-      <div class="input-group instruct vcenter">
+      <div class="input-group instruct vc">
       <input type="text" class="form-control" placeholder="Search for..." ng-model="username.data">
-      </div>
-
-      <span class="input-group-btn">
-       <button  type="submit" class="btn btn-secondary" ng-click="search()">Go!</button>
+	  <span class="input-group-btn">
+       <button  type="submit" class="btn" ng-click="search()">Go!</button>
       </span>
-  
+ 	 </div>
+     
   </div>
 
+<!--
 		<div class = "row instruct">
 			<h2> Enter below to find out who's tweeting what</h2>
 			<form >
@@ -46,8 +45,8 @@
 				<button type="submit" class="btn" ng-click="search()">Search</button>
 			</form>
 		</div>
-
-		<div class = "row fade" ng-repeat = "tweet in tweets">
+-->
+		<div class = "row" ng-repeat = "tweet in tweets">
 			<center>
 					<img ng-src='{{tweet.user.profile_image_url}}'></img>
 					<h3>{{tweet.user.name}}</h3>

@@ -1,5 +1,4 @@
 .title{
-	text-align: center;
 
 }
 
@@ -9,14 +8,28 @@
     float: none;
 }
 
+.vc {
+  margin: auto;
+  position: absolute;
+  left: 0;  right: 0;
+}
+
 .instruct{
 	text-align: center;
-	width: 60%;
-
+	width: 50% !important;
 }
 
 body {
-  background-color: #E4F1FE;
-  opacity: 70%;
+  background-color: #D6F3FF;
+  opacity: 75%;
   text-align: center;
+}
+
+@media (min-width: 750px){
+
+.instruct{
+	text-align: center;
+	width: 350px !important;
+}
+
 }
