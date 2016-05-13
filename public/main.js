@@ -1,4 +1,4 @@
-angular.module('twitterLittleApp', [])
+angular.module('twitterLittleApp', ['ngAnimate'])
 
 	.controller('controller', ['$scope','$http','TweetFactory', function($scope, $http, TweetFactory) {
 		$scope.username = "";

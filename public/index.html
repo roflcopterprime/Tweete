@@ -13,7 +13,8 @@
 	<link rel="stylesheet" href="./styles.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
 	<script src="./main.js"></script> 
 	<script src="./tService.js"></script> 
 	<script src="./core.js"></script> 
@@ -23,30 +24,28 @@
 <body ng-controller="controller">
 	<div class = "container">
 		<div class = "row title">
-			<h1> What's poppin?</h1>
+			<h1>Tweete Tweete</h1>
 		</div>
 
 <div class="row vcenter">
 	<h2> Enter below to find out who's tweeting what</h2>
       <div class="input-group instruct vc">
-      <input type="text" class="form-control" placeholder="Search for..." ng-model="username.data">
+      <input type="text" class="form-control button" placeholder="Username" ng-model="username.data">
 	  <span class="input-group-btn">
-       <button  type="submit" class="btn" ng-click="search()">Go!</button>
+       <button  type="submit" class="btn" ng-click="search()">Search!</button>
       </span>
  	 </div>
   </div>
 <br>
 <br>
 <br>
-		<div class = "row" ng-repeat = "tweet in tweets">
-			<center>
+		<div class = "row one_tweet" ng-repeat = "tweet in tweets" ng-animate="{enter: 'tweet-enter'}">
 					<img ng-src='{{tweet.user.profile_image_url}}'></img>
 					<h3>{{tweet.user.name}}</h3>
 					
 					<p ng-bind="tweet.text"></p>
 					<p>{{tweet.created_at}}</p>
-					<p> {{tweet.favorite_count}} favorites and {{tweet.retweet_count}} retweets</p>
-				</center>
+					<p> <span class="fa fa-heart"></span> {{tweet.favorite_count}} <span class="fa fa-retweet"></span> {{tweet.retweet_count}} retweets</p>
 		</div>
 
 
